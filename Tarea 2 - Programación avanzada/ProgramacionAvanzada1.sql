@@ -217,6 +217,7 @@ GO
 
 
 
+
                     -- VISTAS
 -- creamos un usuario
 CREATE USER JBenitez WITHOUT LOGIN;
@@ -331,7 +332,7 @@ GO
 GRANT EXEC ON Actualiza_Sueldo TO R_Humanos;
 GO
 
-
+-- Creamos procedimiento de actualizar sueldo a un profesor
 CREATE OR ALTER PROCEDURE Actualiza_Sueldo
     @DNI_profe VARCHAR(9),
     @SueldoNuevo DECIMAL(10,2)
@@ -372,8 +373,7 @@ GO
 -- Conceder permiso de ejecución al rol R_Humanos
 GRANT EXEC ON Actualiza_Sueldo TO R_Humanos;
 
--- Revocar permiso de ejecución al rol db_trabajador (si existe)
--- Nota: Asegúrate de que este rol exista en tu base de datos
+-- Revocamos permiso de ejecución al rol db_trabajador 
 IF EXISTS (SELECT * FROM sys.database_principals WHERE name = 'db_trabajador' AND type = 'R')
 BEGIN
     REVOKE EXEC ON Actualiza_Sueldo TO db_trabajador;
@@ -404,17 +404,50 @@ GO
 
 -- Procedimiento para realizar backups (SIN CURSORES)
 
+CREATE PROCEDURE sp_backups
+(@Ruta VARCHAR(MAX))
 
+AS
+	BEGIN
+	  -- Obtener la lista de bases de datos
+	  DECLARE @Databases TABLE (
+		Name VARCHAR(MAX)
+	    );
 
+	  INSERT INTO @Databases
+	  SELECT name
+	  FROM sys.databases
+	  WHERE database_id > 4;
 
+	  -- Iterar sobre las bases de datos
+	  WHILE EXISTS (SELECT 1 FROM @Databases)
+	  BEGIN
 
+		-- Obtener el nombre de la base de datos actual
+		DECLARE @DatabaseName VARCHAR(MAX);
+		SET @DatabaseName = (SELECT Name FROM @Databases);
 
+		-- Obtener la fecha y hora actual
+		DECLARE @Date DATETIME;
+		SET @Date = GETDATE();
 
+		-- Obtener el nombre del archivo de backup
+		DECLARE @BackupFileName VARCHAR(MAX);
+		SET @BackupFileName = CONCAT(@Ruta, '/', @DatabaseName, '_', @Date, '.bak');
 
+		-- Realizar la copia de seguridad
+		BACKUP DATABASE @DatabaseName TO DISK = @BackupFileName WITH FORMAT;
 
+		-- Eliminar la base de datos de la lista
+		DELETE FROM @Databases
+		WHERE Name = @DatabaseName;
 
+	  END;
 
+	END;
 
+	EXEC sp_Backups 'C:\transactsql\Bakcups';
+	GO
 
 
 
