@@ -1,0 +1,7 @@
+nombre,horas,profesor
+ASXBD,80.5,Manuel Corbelle Mejuto
+ASO,40.0,Miguel A. Picay
+EIE,30.0,Francisco Javier Martinez Alaez
+IAW,40.0,Mercedes Fernandez Torres
+SRI,30.0,Anton Ordina Viguera
+SAD,40.0,Antonio Maria Garcia Soto

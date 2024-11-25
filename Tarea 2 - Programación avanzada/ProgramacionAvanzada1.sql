@@ -404,49 +404,65 @@ GO
 
 -- Procedimiento para realizar backups (SIN CURSORES)
 
-CREATE PROCEDURE sp_backups
-(@Ruta VARCHAR(MAX))
+CREATE OR ALTER PROC sp_Backups_ruta
+
+-- Declaramos parámetro de entrada y asignamos la carpeta por defecto
+	@ruta VARCHAR(256) = 'C:\transactsql\backups\'
 
 AS
-	BEGIN
-	  -- Obtener la lista de bases de datos
-	  DECLARE @Databases TABLE (
-		Name VARCHAR(MAX)
-	    );
+-- Declaramos variables internas
 
-	  INSERT INTO @Databases
-	  SELECT name
-	  FROM sys.databases
-	  WHERE database_id > 4;
+DECLARE @name VARCHAR(50), -- nombre base de datos
+@fileName VARCHAR(256), -- nombre del backup
+@fileDate VARCHAR(20), -- fecha del backup
+@backupCount INT -- contador
 
-	  -- Iterar sobre las bases de datos
-	  WHILE EXISTS (SELECT 1 FROM @Databases)
-	  BEGIN
+-- Creamos tabla temporal para almacenar los nombres de las bases de datos
+CREATE TABLE #tempBackup( 
+	 intID INT IDENTITY (1, 1), 
+	 name VARCHAR(200)
+	 )
 
-		-- Obtener el nombre de la base de datos actual
-		DECLARE @DatabaseName VARCHAR(MAX);
-		SET @DatabaseName = (SELECT Name FROM @Databases);
+-- Se convierte la fecha actual a varchary se mete en la variable
+SET @fileDate = CONVERT(VARCHAR(20), GETDATE(), 112)
 
-		-- Obtener la fecha y hora actual
-		DECLARE @Date DATETIME;
-		SET @Date = GETDATE();
+-- Se añaden a la tabla temporal los nombres de las bases de datos que no sean las de prueba
+INSERT INTO #tempBackup (name)
+	SELECT name
+	FROM master.dbo.sysdatabases
+    WHERE name NOT IN ('master', 'model', 'msdb', 'tempdb', 'AdventureWorks', 'WideWorldImporters')
 
-		-- Obtener el nombre del archivo de backup
-		DECLARE @BackupFileName VARCHAR(MAX);
-		SET @BackupFileName = CONCAT(@Ruta, '/', @DatabaseName, '_', @Date, '.bak');
+-- Seleccionamos la primera fila de la tabla tempora donde el ID sea igual al contador (en orden inverso)
+SELECT TOP 1 @backupCount = intID 
+FROM #tempBackup 
+ORDER BY intID DESC
 
-		-- Realizar la copia de seguridad
-		BACKUP DATABASE @DatabaseName TO DISK = @BackupFileName WITH FORMAT;
+-- Si el contador no es nulo y es mayor que 0, iniciamos la copia
+IF ((@backupCount IS NOT NULL) AND (@backupCount > 0))
 
-		-- Eliminar la base de datos de la lista
-		DELETE FROM @Databases
-		WHERE Name = @DatabaseName;
+BEGIN
+	DECLARE @currentBackup INT
+	SET @currentBackup = 1 -- se pone a 1 el contador de backup
+	WHILE (@currentBackup <= @backupCount) -- Mientras la backup actual sea menor o igual que el contador de backups inicia el bucle
+		BEGIN
+			SELECT
+				@name = name,
+				@fileName = @ruta + name + '_' + @fileDate + '.BAK' 
+				FROM #tempBackup
+				WHERE intID = @currentBackup
+				-- Se realiza backup y se incrementa contador
+				BACKUP DATABASE @name TO DISK = @fileName
+				SET @currentBackup = @currentBackup + 1 
+		END
+END
 
-	  END;
+-- Mostramos bases de datos de las que se ha realizado copia
+SELECT * FROM #tempBackup
+DROP TABLE #tempBackup
 
-	END;
+GO
 
-	EXEC sp_Backups 'C:\transactsql\Bakcups';
+	EXEC sp_Backups_ruta 'C:\transactsql\backups\';
 	GO
 
 
