@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="vehiculo" directorySegmentName="seg_0" id="8F8A1764-6098-6689-E82D-A0A7E6147056">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+<schema>C053D002-3DC1-6187-6FBE-EB4A2ABB9086</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Matricula_vehiculo" id="2D828A20-0535-B7D4-A219-9B22CE227AE2">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Modelo" id="39A0425E-E893-C418-8E31-E5D7F6A4E40E">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vehiculo_ID" id="6400067B-6527-7073-15DC-137DF5DAA5C4">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="F_compra" id="DE525EE5-D9FC-D9DC-0F22-BD41632C212A">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Marca" id="E9353117-B4CE-6A6F-0AC8-573B25D78249">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="vehiculo_PK" id="A3A6C0F3-2F51-5DC1-5A9C-420CD08C0CB2">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

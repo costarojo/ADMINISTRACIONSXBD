@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="cliente" directorySegmentName="seg_0" id="9723C5A2-4894-EE40-2492-8E9A005B5E35">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+<schema>740CA64C-5DA5-0AB5-95DB-9480096893C8</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="DNI_cliente" id="1DE41E73-2F76-5687-ACAD-A579E33D8B2B">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="localidad_cod_localidad" id="27174F52-72CE-48D9-76B8-915D1B2ACB0E">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dir_cliente" id="2D656629-CD2B-9E94-03EB-51EC5A53D420">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Telf_cliente" id="2EA39187-8446-3888-FA27-EA1F071EF1D2">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Apel2_cliente" id="61CB9EC3-5074-14F0-339C-C076A2C0118C">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="N_cliente" id="8C8E7A16-101F-92A7-F11D-238761687857">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Email_cliente" id="B7B69E37-8CAC-FF50-DCB7-222D9D3BD2BF">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Apel1_cliente" id="D23BAA23-0195-8377-23B1-15DE46D88945">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="cliente_localidad_FK" id="D075AA0C-6FCA-8B2B-06A7-1BD14794CF34">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>autoescuelafinal</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="cliente_PK" id="7399C575-FC80-5195-9E78-FC6780E11984">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

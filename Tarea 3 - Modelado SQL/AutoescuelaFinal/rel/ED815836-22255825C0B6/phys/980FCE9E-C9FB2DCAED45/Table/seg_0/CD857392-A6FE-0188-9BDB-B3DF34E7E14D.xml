@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="autonomia" directorySegmentName="seg_0" id="CD857392-A6FE-0188-9BDB-B3DF34E7E14D">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+<schema>1D6071F1-6DBC-60D3-2824-629B2E38196B</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cod_autonomia" id="4101B34F-E4C3-F8E8-6E9E-A5C760AC4C98">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="n_autonomia" id="A1CC1451-A0FF-00DC-8F91-97E16A1C577C">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="autonomia_PK" id="B484326D-084B-FF0C-E33B-88082F3F416E">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="examen" directorySegmentName="seg_0" id="D5BC55CD-15B5-96B1-3C52-A9C58D6436E7">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+<schema>CFDBC92B-0A63-A165-0B09-252D09AAEAE9</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="ID_examen" id="11EAAC38-7265-8826-A06F-DC08A8874D3D">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Tipo_examen" id="23AC8192-F8BD-652A-19EC-CE8486DD84D1">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vehiculo_vehiculo_ID" id="8DE43514-936A-7708-42AC-BA0767767CF8">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cliente_DNI_cliente" id="8F76175B-6073-3087-96EE-7E71AD96DF80">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="F_examen" id="93214C1A-7216-5102-BA6B-DC832766E911">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Tipo_carnet" id="9A88E094-92C1-1037-23CE-82D00BA161A8">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Matricula_vehiculo" id="D3F271B9-C277-725B-5201-CB7AD6B98AB4">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="examen_vehiculo_FK" id="82F8C235-C3B3-979D-70A9-062B3FED7153">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>autoescuelafinal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="examen_cliente_FK" id="D59FB4EC-CCB6-B5E2-12C1-EA766E2BC7BD">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>autoescuelafinal</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="examen_PK" id="B0DC33EB-0C2F-3E61-3CAE-560BD67B512B">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77AF48B5-88FC-C5B4-8200-3ECD30D81CD0" containerWithKeyObject="BC5DF306-DCAA-FE9F-B44E-B7CB86BE95D4" localFKIndex="16E4EB38-03CF-4137-439D-DF2E476AE354" name="teorica_cliente_FK">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>BB6A3E02-7C45-91D7-ECB4-9F5D545178AA</importedID>
+<referredTableLongName>cliente</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9723C5A2-4894-EE40-2492-8E9A005B5E35</referredTableID>
+<keyObject>7399C575-FC80-5195-9E78-FC6780E11984</keyObject>
+<referredKeyID>7399C575-FC80-5195-9E78-FC6780E11984</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DNI_cliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

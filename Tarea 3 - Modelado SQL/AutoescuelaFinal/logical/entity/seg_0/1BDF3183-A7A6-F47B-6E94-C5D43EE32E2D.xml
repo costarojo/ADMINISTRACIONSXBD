@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1BDF3183-A7A6-F47B-6E94-C5D43EE32E2D" name="localidad">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>6BE3B712-3ECC-D31C-F0F4-C2F641C8B1C5</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod localidad" id="1E78911E-AF5C-D115-ABD2-D0BA840D5C7C">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>625F2A96-91F2-7CA4-860D-85433A479A88</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="n localidad" id="7DAE775C-1285-FC4F-A3B3-CEC2A5C78038">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>CA748139-A484-9FE3-9B64-F24D1E8C055E</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="provincia cod provincia" id="8872B543-D9CA-DFC1-710F-87F7DC8DA881">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>85DA21C2-97B1-A738-31B4-9013D0BB0CFC</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<referedAttribute>3BCF14EE-08FC-C4F8-3CC3-C05C1EA84046</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5A63454D-AA54-14A5-593C-26DF2A3A5396" name="localidad PK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>2C184961-4196-A6F5-D0F9-5CD9033FBD5D</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E78911E-AF5C-D115-ABD2-D0BA840D5C7C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="profe_teorica" directorySegmentName="seg_0" id="1D3D2307-EF59-8864-DE28-8DB2631A1DB6">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+<schema>5A9949B2-6BAA-1C9C-F80D-038D953FD37D</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Horas_clase" id="4C3D9B12-B783-B05E-26C2-354E9EA90557">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Clase" id="516CF4DA-8A31-793B-335A-2C953824518D">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="profesor_profesor_DNI_profe" id="8E9394BE-5B4C-A068-4779-F3EBF72995C8">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="DNI_profesor" id="B10CB2E3-AF20-6DCF-9877-AA4ED905D0C8">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="profe_teorica_profesor_FK" id="1D9E8F70-3AC4-EF03-D3BF-9E7A12B4DDDC">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>autoescuelafinal</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="profe_teorica_profesor_FKv2" id="A3436CB5-678A-23F8-30DD-97776382C19D">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="profe_teorica_PK" id="8CBB56A2-D39E-E007-D6AE-7B79A4AF42B5">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+</PrimaryKey>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="profe_teorica_PKv1" id="A03FB13A-311D-5354-0E68-0A89F609D2FB">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED658280-8D51-B1C1-BA01-3E10DC09EAC9" name="practica">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>9EBBD266-357E-A793-E252-B3052D877E9F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_practica" id="1612BAAD-C85A-B437-D9F3-94F2BEE90A0E">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>F2170C18-EA7B-D829-8D7A-FE4CE43EA8ED</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BE2F37B5-E9CA-8486-0354-B06171D4F700</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F_practica" id="264B140E-50D2-8554-108A-74CC26DAC522">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>DEEA2875-359F-B61E-7464-9CF5F6F4F600</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C9754846-E308-A2CB-D8F0-E343239CFB5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado_practica" id="004828EA-9BEA-B404-A114-3749DA617216">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>B9B343FC-FC73-8D49-B953-B3B1DCC123B8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_DNI_cliente" id="EF734870-75F7-B009-A488-0D75B904E453">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>EFBF9460-789C-3A08-A145-96137BBADD53</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4C2F5EE-637B-DF9D-2C30-B8BD9B79D1BF" referredColumn="1DE41E73-2F76-5687-ACAD-A579E33D8B2B"/>
+</associations>
+</Column>
+<Column name="vehiculo_vehiculo_ID" id="6C0F37E2-4703-90FE-C265-EC3142087742">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>872CD156-20C5-FCAD-8ECE-5D6F92105B43</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F5A29C9C-851B-6C7D-16DE-6D332677A83A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profe_practicas_profesor_DNI_profe" id="60EAFA7F-CA3E-4074-8C67-5E5D643E9041">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>8F98E171-15CE-0D6B-696E-747DC823E7DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59478C4B-DD44-9D1D-491D-849514E011A4" referredColumn="3E54B35A-5A93-5A1F-8D4F-79B6107D02E2"/>
+</associations>
+</Column>
+<Column name="Matricula_vehiculo" id="060C8DBE-A385-8427-63B1-9F97632B03BD">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>C2EA7F3F-8A8A-C143-7B1C-09F6F6E2E72F</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97E80ADF-1BCC-B9AF-1708-398E80CFC74A" referredColumn="2D828A20-0535-B7D4-A219-9B22CE227AE2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88EE701D-BECF-55DF-8630-86FD584E12FF" name="practica_PK">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>1FEECCD3-7AF5-8E98-25D9-CA1E15E9C73F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1612BAAD-C85A-B437-D9F3-94F2BEE90A0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59A14621-044D-2C5D-1FD9-F0B2BA5CDCDA" name="practica_cliente_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF734870-75F7-B009-A488-0D75B904E453"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36CD4C0B-7523-16BB-DB9E-5E8A75E663BF" name="practica_profe_practicas_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60EAFA7F-CA3E-4074-8C67-5E5D643E9041"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="847E569D-636F-9785-22A2-5F37D9D0EA59" name="practica_vehiculo_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="060C8DBE-A385-8427-63B1-9F97632B03BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

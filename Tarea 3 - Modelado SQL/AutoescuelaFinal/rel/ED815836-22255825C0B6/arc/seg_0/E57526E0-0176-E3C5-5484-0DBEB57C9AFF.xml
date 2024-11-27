@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="E57526E0-0176-E3C5-5484-0DBEB57C9AFF" name="FKArc_1">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>719B693C-50BA-E8C7-E656-D8B4BDBF233A</table>
+<fkeys>
+<fkeyID>9262F168-8384-E982-1C74-6256534598FC</fkeyID>
+<fkeyID>BD7F3B3C-128A-090C-35AD-E9397D67DB6B</fkeyID>
+</fkeys>
+</FKArc>

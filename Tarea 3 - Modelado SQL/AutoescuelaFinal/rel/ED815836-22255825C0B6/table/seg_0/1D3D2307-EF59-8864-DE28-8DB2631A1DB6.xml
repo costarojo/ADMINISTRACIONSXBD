@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D3D2307-EF59-8864-DE28-8DB2631A1DB6" name="profe_teorica">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>F5B0176F-4129-57C3-C164-78B090E8B607</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="profesor_profesor_DNI_profe" id="8E9394BE-5B4C-A068-4779-F3EBF72995C8">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>F72255FE-F6A7-CFDF-7586-7594B69610BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA0EEB89-0DA6-64EE-6B2E-C84AD5F5FC4E" referredColumn="2639CB2A-C348-9926-53CC-FA5902AEF926"/>
+</associations>
+</Column>
+<Column name="Clase" id="516CF4DA-8A31-793B-335A-2C953824518D">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>A60A53B9-A8AB-EEBF-253C-C96D09F5CF60</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Horas_clase" id="4C3D9B12-B783-B05E-26C2-354E9EA90557">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>F0777A1D-7AE9-284A-5094-832207C80C4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BE2F37B5-E9CA-8486-0354-B06171D4F700</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNI_profesor" id="B10CB2E3-AF20-6DCF-9877-AA4ED905D0C8">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>F90DC056-659F-7076-48EB-9C413818CCBE</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9262F168-8384-E982-1C74-6256534598FC" referredColumn="2639CB2A-C348-9926-53CC-FA5902AEF926"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A03FB13A-311D-5354-0E68-0A89F609D2FB" name="profe_teorica_PKv1">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>52E67369-32A6-9E73-A53D-31AE16D8F647</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B10CB2E3-AF20-6DCF-9877-AA4ED905D0C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CBB56A2-D39E-E007-D6AE-7B79A4AF42B5" name="profe_teorica_PK">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:41 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>C01FF347-CFD1-CABB-892F-746BFD25DF59</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E9394BE-5B4C-A068-4779-F3EBF72995C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D9E8F70-3AC4-EF03-D3BF-9E7A12B4DDDC" name="profe_teorica_profesor_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E9394BE-5B4C-A068-4779-F3EBF72995C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3436CB5-678A-23F8-30DD-97776382C19D" name="profe_teorica_profesor_FKv2">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>0F419330-1E65-2576-4B95-10F8782DF388</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B10CB2E3-AF20-6DCF-9877-AA4ED905D0C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="AutoescuelaFinal2" id="3FF8B459-89E1-3203-D792-893FD62F5B67" version="3.5">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:16:53 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3FF8B459-89E1-3203-D792-893FD62F5B67</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6197659E-E8AD-34CC-B3B0-59152AF4ECD9">
+<designStoragePath>C:\autoescuelafinal</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83E7105F-A66F-5B82-F5AF-CF15562C942E" containerWithKeyObject="A7935F53-47FC-472F-0849-34465EA2978A" localFKIndex="B5F48C31-27F3-1C3E-3D1B-E5385FD92055" name="Pagos_Precios_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>F0D155BA-75A6-1908-F64F-4714DC5B6E12</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<referredTableLongName>Precios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>92CDB173-C719-5DA7-D158-D648AFF11D13</referredTableID>
+<keyObject>7A0E9C4D-4A02-13F1-908E-BFD4CD8734C6</keyObject>
+<referredKeyID>7A0E9C4D-4A02-13F1-908E-BFD4CD8734C6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Precio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

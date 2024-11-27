@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F62B6DE2-8434-0240-F0F0-3ABD9852A230" containerWithKeyObject="DCA52E5D-88FC-1015-6678-D65B64276A36" localFKIndex="248E2406-E046-1071-2161-4B4916B80742" name="provincia_autonomia_FK">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>9B730116-CE5B-5C3B-B6D1-322F012D935D</importedID>
+<referredTableLongName>autonomia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CD857392-A6FE-0188-9BDB-B3DF34E7E14D</referredTableID>
+<keyObject>B484326D-084B-FF0C-E33B-88082F3F416E</keyObject>
+<referredKeyID>B484326D-084B-FF0C-E33B-88082F3F416E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_autonomia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

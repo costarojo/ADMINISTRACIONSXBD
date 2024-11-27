@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7F5342B0-3129-19F2-FAC0-DBA7B5DDDD6F" name="autonomia">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>CD857392-A6FE-0188-9BDB-B3DF34E7E14D</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod autonomia" id="1BDCDD1E-66CF-77A7-E30E-3F5AAD8A2538">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>4101B34F-E4C3-F8E8-6E9E-A5C760AC4C98</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="n autonomia" id="AED589E6-81AA-4518-F2C3-29658B35EEC9">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>A1CC1451-A0FF-00DC-8F91-97E16A1C577C</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE568D00-02E8-16CC-1DDC-1F1D06D96432" name="autonomia PK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>B484326D-084B-FF0C-E33B-88082F3F416E</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1BDCDD1E-66CF-77A7-E30E-3F5AAD8A2538</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BEABE20D-2284-4CBC-A454-B430C8B257E6" containerWithKeyObject="9064E771-F9BD-3E17-D713-9108E69CF55E" localFKIndex="75C43272-0092-D5CC-5FA2-C5184DB57983" name="Nomina_contrato_FK">
+<sourceDDLFile>autoescuelafinal.sql</sourceDDLFile>
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<importedID>B3F8F4F1-02F7-B7AD-F453-95E140A53828</importedID>
+<referredTableLongName>contrato</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>938F049E-F957-E0A8-B417-36694FFFD0CB</referredTableID>
+<keyObject>A7D707F2-22E5-7E49-CAB7-9C52375743DC</keyObject>
+<referredKeyID>A7D707F2-22E5-7E49-CAB7-9C52375743DC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_contrato</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

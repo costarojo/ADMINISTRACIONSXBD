@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="ED815836-BC40-2E42-736A-22255825C0B6" mainViewID="BBE2CAB5-0A4F-FDFF-81A6-2B69FB734FDE">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:16:53 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>980FCE9E-D688-BDF0-C89A-C9FB2DCAED45</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>autoescuelafinal.sql</fileName>
+<pathName>C:\transactsql\Tarea 3 - Modelado SQL</pathName>
+<dbType>13</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7935F53-47FC-472F-0849-34465EA2978A" name="Pagos">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>049F3D1C-A88F-51FC-48BA-1E438999A851</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_pago" id="A5DDEA8E-F2F1-F580-41EB-58D348B93227">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>91B66935-1EC4-DB5F-7992-E00742223F5C</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaPago" id="FB416130-33EB-15C7-E5BD-8A3EAC8C75CE">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>5AACB247-C9EB-C390-0D60-3B89751988B3</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_DNI_cliente" id="3C0C6869-36E0-75D4-56E4-268A66904507">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>FE9C2ABF-7318-523B-295A-BB1B06380DD2</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7DD321C-3251-D9F0-D0ED-171D0876D743" referredColumn="1DE41E73-2F76-5687-ACAD-A579E33D8B2B"/>
+</associations>
+</Column>
+<Column name="Precios_ID_Precio" id="B7B73731-41EF-8EC8-1EB7-DB253CDCE3EE">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>A5830769-5FDA-2619-6FE7-1DC3448F71B9</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83E7105F-A66F-5B82-F5AF-CF15562C942E" referredColumn="8CEE423F-B0F7-DA96-AF3C-F03F398CB965"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84679E08-8733-133C-2420-43F352924CF4" name="Pagos_PK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>385083CD-711F-9841-0963-22A3A56ABC2F</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5DDEA8E-F2F1-F580-41EB-58D348B93227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3BF5107-719D-FB4A-0B8E-43B58F9A808F" name="Pagos_cliente_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>2A45D1DB-9420-2331-7EE5-0FAC783663CA</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C0C6869-36E0-75D4-56E4-268A66904507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5F48C31-27F3-1C3E-3D1B-E5385FD92055" name="Pagos_Precios_FK">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>F0D155BA-75A6-1908-F64F-4714DC5B6E12</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7B73731-41EF-8EC8-1EB7-DB253CDCE3EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="practica_cliente_FK" directorySegmentName="seg_0" id="739C04CE-1A9F-16E7-F326-E09D4B8701B9">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>C4C2F5EE-637B-DF9D-2C30-B8BD9B79D1BF</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<sourcePk>8785FF12-67F0-EB65-6AA6-42F11DAD1498</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>10B80E4C-2200-85B7-A724-A30B4A8A28EF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B1A525D5-5A3B-BE2F-3745-613CFBFE406C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

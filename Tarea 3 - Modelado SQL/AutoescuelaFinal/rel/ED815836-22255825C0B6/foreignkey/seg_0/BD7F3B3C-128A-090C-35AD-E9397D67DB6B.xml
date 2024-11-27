@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BD7F3B3C-128A-090C-35AD-E9397D67DB6B" containerWithKeyObject="E581DE50-AED3-AB73-0B51-D1A3B2A90C92" localFKIndex="80E6FFC0-0A3F-A343-202B-429628B66D61" name="profe_practicas_profesor_FKv2">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 12:24:34 UTC</createdTime>
+<generatorID>862D386E-DDDF-B6EF-79EB-EE9E62EFB410</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<referredTableLongName>profesor</referredTableLongName>
+<arc>E57526E0-0176-E3C5-5484-0DBEB57C9AFF</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>719B693C-50BA-E8C7-E656-D8B4BDBF233A</referredTableID>
+<keyObject>C4CBB6E7-56D0-599D-7E61-91DE19489DC8</keyObject>
+<referredKeyID>C4CBB6E7-56D0-599D-7E61-91DE19489DC8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DNI_profesor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

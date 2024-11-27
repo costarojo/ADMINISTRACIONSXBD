@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="localidad_provincia_FK" directorySegmentName="seg_0" id="85DA21C2-97B1-A738-31B4-9013D0BB0CFC">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>3E4433D5-465A-6FE0-9331-BE82F9AC5EF6</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<sourcePk>E01960BB-352A-55FF-1C67-BD1B41A5759F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A65B3B2B-B146-331E-208C-E03650225721</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1BDF3183-A7A6-F47B-6E94-C5D43EE32E2D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

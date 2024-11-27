@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.UserSqlServerv2k12" directorySegmentName="seg_0" id="DB_NULLELEMENT_dbo" name="dbo">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:39 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>DB_NULLELEMENT</database>
+</UserSqlServerv2k12>

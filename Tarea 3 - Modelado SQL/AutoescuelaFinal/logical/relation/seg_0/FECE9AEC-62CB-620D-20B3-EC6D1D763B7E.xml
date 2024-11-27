@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="profe_teorica_profesor_FK" directorySegmentName="seg_0" id="FECE9AEC-62CB-620D-20B3-EC6D1D763B7E">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>BA0EEB89-0DA6-64EE-6B2E-C84AD5F5FC4E</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<sourcePk>52E67369-32A6-9E73-A53D-31AE16D8F647</sourcePk>
+<dominantRole>A87F3970-7703-F24B-DC73-DE7C6FEECEE3</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A87F3970-7703-F24B-DC73-DE7C6FEECEE3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5ACBAC7E-C592-5660-9ACE-4CADEE9668FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

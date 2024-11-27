@@ -311,4 +311,3 @@ $SqlConn.Close()
 $dt | Export-Csv -LiteralPath "C:\transactsql\sproc.txt" -NoTypeInformation
 notepad C:\transactsql\sproc.txt
 
-.gkfyhgjk

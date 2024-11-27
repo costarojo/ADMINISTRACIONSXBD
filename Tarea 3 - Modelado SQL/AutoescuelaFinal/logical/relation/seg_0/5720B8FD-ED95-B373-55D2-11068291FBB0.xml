@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="examen_vehiculo_FK" directorySegmentName="seg_0" id="5720B8FD-ED95-B373-55D2-11068291FBB0">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:21:06 UTC</createdTime>
+<generatorID>F9097297-EDF2-4259-9680-B2CBE60E7F51</generatorID>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<sourcePk>CA802151-A759-DCA8-B634-3A142EAE1A3C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4C67A50F-387F-06ED-AA2A-AFA3AD1FAD65</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A40E9B6D-F8B9-D7F1-71E5-41023E625B85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PreciPago" directorySegmentName="seg_0" id="F0D155BA-75A6-1908-F64F-4714DC5B6E12">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:33:55 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<engineerTo>
+<item key="ED815836-BC40-2E42-736A-22255825C0B6" value="true"/>
+</engineerTo>
+<sourcePk>DD33F81D-9858-E511-F0EE-C6713AC19EF9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>36794B0E-934F-FFCE-9C38-34B30D202E93</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>049F3D1C-A88F-51FC-48BA-1E438999A851</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

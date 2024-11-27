@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.UserSqlServerv2k12" directorySegmentName="seg_0" id="A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4_dbo" name="dbo">
+<createdBy>cjgal</createdBy>
+<createdTime>2024-11-27 11:20:43 UTC</createdTime>
+<ownerDesignName>AutoescuelaFinal2</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>A7F0AB4B-50D8-10C6-DB3D-6B0D251C84C4</database>
+</UserSqlServerv2k12>
