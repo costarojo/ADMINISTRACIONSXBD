@@ -335,7 +335,7 @@ GRANT EXEC ON Actualiza_Sueldo TO R_Humanos;
 GO
 
 
--- Modificamos el procedimiento para mostrar el resultad
+-- Modificamos el procedimiento para mostrar el resultado
 CREATE OR ALTER PROCEDURE Actualiza_Sueldo
     @DNI_profe VARCHAR(9),
     @SueldoNuevo DECIMAL(10,2)
@@ -384,7 +384,7 @@ GO
 
 -- Ejecutar el procedimiento como usuario JBenitez
 EXECUTE AS USER = 'JBenitez';
-EXEC Actualiza_Sueldo '98765432Z', 3000.00;
+EXEC Actualiza_Sueldo '98765432Z', 2000.00;
 GO
 REVERT;
 GO
@@ -1034,6 +1034,214 @@ EXEC sp_GestionarReabastecimiento;
 
 SELECT * FROM LogReabastecimiento;
 select * from Ordenes_Reabastecimiento;
+
+---------------------------------------------------------------------------
+-- INSERCION DE DATOS Y MODIFICACION DE TABLAS
+
+ALTER TABLE profe_teorica
+ALTER COLUMN clase VARCHAR(50);
+
+ALTER TABLE profe_practicas
+ALTER COLUMN titulacion VARCHAR(50);
+
+--Añadimos datos a la tabla
+
+INSERT INTO vehiculo (matricula_vehiculo, marca, modelo, f_compra)
+VALUES
+('ABC1234', 'Toyota', 'Corolla', '2018-05-10'),
+('DEF5678', 'Ford', 'Focus', '2019-02-15'),
+('GHI9012', 'Volkswagen', 'Golf', '2020-06-20'),
+('JKL3456', 'Honda', 'Civic', '2019-12-12'),
+('MNO7890', 'Nissan', 'Altima', '2021-03-30'),
+('PQR1234', 'Chevrolet', 'Malibu', '2020-11-05'),
+('STU5678', 'Hyundai', 'Elantra', '2022-01-15'),
+('VWX9012', 'Kia', 'Forte', '2021-08-22'),
+('YZA3456', 'Mazda', 'Mazda3', '2023-02-10'),
+('BCD7890', 'Subaru', 'Impreza', '2023-07-01'),
+('EFG1234', 'Renault', 'Clio', '2019-03-18'),
+('HIJ5678', 'Peugeot', '308', '2020-07-14'),
+('KLM9012', 'BMW', 'Serie 3', '2021-04-22'),
+('NOP3456', 'Mercedes', 'Clase C', '2022-09-30'),
+('QRS7890', 'Audi', 'A4', '2021-06-18'),
+('TUV1234', 'Seat', 'León', '2020-02-25'),
+('WXY5678', 'Opel', 'Astra', '2022-12-11'),
+('ZAB9012', 'Fiat', 'Tipo', '2023-03-20'),
+('CDE3456', 'Tesla', 'Model 3', '2023-05-12'),
+('FGH7890', 'Volvo', 'S60', '2022-11-25');
+
+INSERT INTO teorica (id_teorica, f_teorica, aula, cliente_dni_cliente, profe_teorica_profesor_dni_profe)
+VALUES
+(1, '2019-03-12', 101, '01234567J', '09876543Q'),
+(2, '2019-07-15', 102, '12345678A', '10987654R'),
+(3, '2020-01-18', 103, '23456789B', '21098765S'),
+(4, '2020-06-22', 104, '34567890C', '32109876T'),
+(5, '2021-09-10', 105, '45678901D', '43210987U'),
+(6, '2021-11-05', 106, '56789012E', '54321098V'),
+(7, '2022-02-25', 107, '67890123F', '65432109W'),
+(8, '2022-05-30', 108, '78901234G', '76543210X'),
+(9, '2023-03-15', 109, '89012345H', '87654321Y'),
+(10, '2023-08-20', 110, '90123456I', '98765432Z'),
+(11, '2019-02-14', 201, '01234567J', '09876543Q'),
+(12, '2019-10-18', 202, '12345678A', '10987654R'),
+(13, '2020-04-12', 203, '23456789B', '21098765S'),
+(14, '2020-11-20', 204, '34567890C', '32109876T'),
+(15, '2021-06-15', 205, '45678901D', '43210987U'),
+(16, '2021-12-25', 206, '56789012E', '54321098V'),
+(17, '2022-03-17', 207, '67890123F', '65432109W'),
+(18, '2022-07-11', 208, '78901234G', '76543210X'),
+(19, '2023-01-08', 209, '89012345H', '87654321Y'),
+(20, '2023-05-20', 210, '90123456I', '98765432Z');
+
+INSERT INTO practica (id_practica, f_practica, estado_practica, cliente_dni_cliente, profe_practicas_profesor_dni_profe, matricula_vehiculo)
+VALUES
+(1, '2019-01-10', 'Completada', '01234567J', '09876543Q', 'ABC1234'),
+(2, '2019-04-20', 'Pendiente', '12345678A', '10987654R', 'DEF5678'),
+(3, '2020-02-14', 'Cancelada', '23456789B', '21098765S', 'GHI9012'),
+(4, '2020-07-22', 'Completada', '34567890C', '32109876T', 'JKL3456'),
+(5, '2021-08-30', 'Pendiente', '45678901D', '43210987U', 'MNO7890'),
+(6, '2021-10-05', 'Cancelada', '56789012E', '54321098V', 'PQR1234'),
+(7, '2022-01-17', 'Completada', '67890123F', '65432109W', 'STU5678'),
+(8, '2022-04-21', 'Pendiente', '78901234G', '76543210X', 'VWX9012'),
+(9, '2023-06-15', 'Cancelada', '89012345H', '87654321Y', 'YZA3456'),
+(10, '2023-10-20', 'Completada', '90123456I', '98765432Z', 'BCD7890'),
+(11, '2023-03-12', 'Pendiente', '01234567J', '09876543Q', 'EFG1234'),
+(12, '2023-07-18', 'Cancelada', '12345678A', '10987654R', 'HIJ5678'),
+(13, '2020-05-12', 'Completada', '23456789B', '21098765S', 'KLM9012'),
+(14, '2020-09-22', 'Pendiente', '34567890C', '32109876T', 'NOP3456'),
+(15, '2021-12-15', 'Cancelada', '45678901D', '43210987U', 'QRS7890'),
+(16, '2021-03-10', 'Completada', '56789012E', '54321098V', 'TUV1234'),
+(17, '2022-02-25', 'Pendiente', '67890123F', '65432109W', 'WXY5678'),
+(18, '2022-06-05', 'Cancelada', '78901234G', '76543210X', 'ZAB9012'),
+(19, '2023-04-08', 'Completada', '89012345H', '87654321Y', 'CDE3456'),
+(20, '2023-09-15', 'Pendiente', '90123456I', '98765432Z', 'FGH7890');
+
+INSERT INTO profe_teorica (profesor_profesor_dni_profe, clase, horas_clase, dni_profesor)
+VALUES
+('09876543Q', 'Reglamento de tráfico', 20, '09876543Q'),
+('10987654R', 'Señalización vial', 15, '10987654R'),
+('21098765S', 'Normativa medioambiental', 25, '21098765S'),
+('32109876T', 'Normas de circulación', 30, '32109876T'),
+('43210987U', 'Educación vial', 10, '43210987U'),
+('54321098V', 'Psicotécnico', 18, '54321098V'),
+('65432109W', 'Primera ayuda en accidentes', 12, '65432109W'),
+('76543210X', 'Mantenimiento de vehículos', 20, '76543210X'),
+('87654321Y', 'Factores de riesgo al conducir', 15, '87654321Y'),
+('98765432Z', 'Planificación de rutas', 10, '98765432Z');
+
+INSERT INTO profe_practicas (profesor_profesor_dni_profe, titulacion, horas_practicas, dni_profesor)
+VALUES
+('09876543Q', 'Instructor avanzado', 40, '09876543Q'),
+('10987654R', 'Instructor de seguridad vial', 35, '10987654R'),
+('21098765S', 'Instructor ambiental', 30, '21098765S'),
+('32109876T', 'Instructor especializado en maniobras', 25, '32109876T'),
+('43210987U', 'Instructor de conducción defensiva', 20, '43210987U'),
+('54321098V', 'Instructor en simuladores', 30, '54321098V'),
+('65432109W', 'Instructor de mantenimiento básico', 20, '65432109W'),
+('76543210X', 'Instructor de manejo de emergencias', 35, '76543210X'),
+('87654321Y', 'Instructor de planificación', 25, '87654321Y'),
+('98765432Z', 'Instructor de técnicas avanzadas', 15, '98765432Z');
+
+
+Select * FROM profesor;
+GO
+
+Select * FROM practica;
+GO
+--------------------------------------------------------------------------
+-- EJERCICIO PRACTICA
+-- procedimiento para calcular el número total de alumnos inscritos en cada curso (teórico o práctico) por años
+-- almacenará el resultado en una tabla de auditoría.
+
+-- Creamos tabla auditoria
+CREATE TABLE Auditorianual(
+	ID_auditoria INT IDENTITY PRIMARY KEY,
+	anno INT,
+	matriculas INT,
+	tipo VARCHAR(20)
+);
+-- Creamos la vista clases
+-- Podríamos crear una vista para teoricas y otra para prácticas 
+-- para restringir la información a cada departamento
+
+CREATE VIEW w_clases AS
+	SELECT anno, matriculas, tipo
+	FROM Auditorianual;
+
+
+-- Creamos procedimiento y declaramos parámetro de entrada
+CREATE OR ALTER PROCEDURE sp_auditorianual
+@anno INT
+
+-- Declaramos variables internas y procedimiento
+AS BEGIN
+DECLARE
+@contadorteorica INT,
+@contadorpractica INT,
+@f_teorica date,
+@f_practica date
+
+SET @contadorteorica = 0;
+SET @contadorpractica = 0;
+DECLARE cursorteorica CURSOR FOR
+	SELECT 
+		f_teorica
+	FROM teorica;
+
+DECLARE cursorpractica CURSOR FOR
+	SELECT 
+		f_practica
+	FROM practica;
+	-- Abrimos cursor y apuntamos a la primera fila
+	BEGIN TRY
+			BEGIN TRAN
+			OPEN cursorteorica
+			FETCH NEXT FROM cursorteorica INTO @f_teorica 
+			WHILE @@FETCH_STATUS = 0
+				BEGIN
+					IF YEAR(@f_teorica) = @anno
+					SET @contadorteorica = @contadorteorica + 1;
+					FETCH NEXT FROM cursorteorica INTO @f_teorica
+				END;
+			CLOSE cursorteorica;
+			DEALLOCATE cursorteorica;
+
+			OPEN cursorpractica
+			FETCH NEXT FROM cursorpractica INTO @f_practica
+			WHILE @@FETCH_STATUS = 0
+				BEGIN
+					IF YEAR(@f_practica) = @anno
+					SET @contadorpractica = @contadorpractica + 1;
+					FETCH NEXT FROM cursorpractica INTO @f_practica
+				END;
+				CLOSE cursorpractica;
+			DEALLOCATE cursorpractica;
+
+			IF NOT EXISTS (SELECT 1 FROM Auditorianual WHERE anno = @anno)
+			BEGIN
+				INSERT INTO Auditorianual (anno, matriculas, tipo)
+				VALUES (@anno, @contadorteorica, 'Teoría'),
+					   (@anno, @contadorpractica, 'Práctica');
+			END;
+	COMMIT TRAN;
+	END TRY
+
+	BEGIN CATCH
+		ROLLBACK TRAN;
+		THROW;
+	END CATCH;
+	
+	SELECT * FROM w_clases
+	WHERE anno = @anno;
+END;
+
+EXEC sp_auditorianual 2019;
+
+SELECT * FROM w_clases;
+GO
+
+DELETE FROM Auditorianual;
+GO
+
 ---------------------------------------------------------------------------
 
 -- INSERTAR DATOS EN UNA TABLA DESDE ARCHIVO CON BULK
