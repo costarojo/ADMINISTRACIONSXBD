@@ -1148,7 +1148,7 @@ GO
 Select * FROM practica;
 GO
 --------------------------------------------------------------------------
--- EJERCICIO PRACTICA
+-- EJERCICIO PRACTICA 3 
 -- procedimiento para calcular el número total de alumnos inscritos en cada curso (teórico o práctico) por años
 -- almacenará el resultado en una tabla de auditoría.
 
